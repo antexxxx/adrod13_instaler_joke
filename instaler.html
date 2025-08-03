@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>instaling adrod 13 screen</title>
+</head>
+<body>
+    <img src="adrod13.png" style="height: 15vh; width: 100%;">
+    <h1>instaling adrod13...</h1>
+    <p>   </p>
+    <p>   </p>
+    <p>   </p>
+
+
+<div class="bar-container">
+<div class="bar" id="bar"></div>
+</div>
+<div class="percent" id="percent" style="color: black;">0%</div>
+
+<style>
+  .bar-container {
+    width: 80%;
+    height: 30px;
+    background: #938a8a;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .bar {
+    height: 100%;
+    width: 0%;
+    background: limegreen;
+    transition: width 0.03s linear;
+  }
+  .percent {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0) !important;
+  z-index: 9999;
+  position: relative;
+}
+
+
+</style>
+
+<script>
+  let progress = 0
+  const bar = document.getElementById("bar")
+  const percent = document.getElementById("percent")
+
+  const interval = setInterval(() => {
+    progress++
+    bar.style.width = progress + "%"
+    percent.textContent = progress + "%"
+    if (progress >= 100) {
+      clearInterval(interval)
+      window.location.href = "cooked.html"
+    }
+  }, 30)
+</script>
+
+    <p>do not close your phon please, otherwise the phone will unfortuneately success in instaling adrod 13 💀</p>
+    <p>with the magik of chat g p t we was able to make adrod 13 instaler and we have fortuneatle not succes we arebt even sure if this build works btw 🥀</p>
+</body>
+</html>
